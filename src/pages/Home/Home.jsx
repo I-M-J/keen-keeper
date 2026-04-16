@@ -10,7 +10,7 @@ const Home = () => {
 
             <Stats />
 
-            <hr className='max-w-277.5 mx-auto w-11/12 xl:w-111/160 border-[#E9E9E9]' />
+            <hr className='max-w-277.5 mx-auto w-9/10 xl:w-111/160 border-[#E9E9E9]' />
 
             <AllFriends />
         </section>

@@ -4,7 +4,7 @@
         "name": "David Kim",
         "picture": "David Kim",
         "email": "david.kim@example.com",
-        "days_since_contact": 62,
+        "days_since_contact": 6,
         "status": "almost_due",
         "tags": [
             "work",
@@ -19,7 +19,7 @@
         "name": "Emma Wilson",
         "picture": "Emma Wilson",
         "email": "emma.wilson@example.com",
-        "days_since_contact": 62,
+        "days_since_contact": 22,
         "status": "overdue",
         "tags": [
             "family",
@@ -34,7 +34,7 @@
         "name": "Lisa Nakamura",
         "picture": "Lisa Nakamura",
         "email": "lisa.nakamura@example.com",
-        "days_since_contact": 62,
+        "days_since_contact": 36,
         "status": "overdue",
         "tags": [
             "travel",

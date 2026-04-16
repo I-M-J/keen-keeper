@@ -1,14 +1,15 @@
 import React, { Suspense, use, useContext } from 'react';
 import FriendsContext from '../../contexts/FriendsContext';
+import FriendCard from './FriendCard/FriendCard';
 
 
 
 const FriendsList = ({ friendsPromise }) => {
     const friends = use(friendsPromise);
     return (
-        <div>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gird-col-4 gap-6'>
             {
-                friends.map(friend => <div key={friend.id}>{friend.id}</div>)
+                friends.map(friend => <FriendCard key={friend.id} friend={friend} />)
             }
         </div>
     );
@@ -18,8 +19,8 @@ const AllFriends = () => {
     const { friendsPromise } = useContext(FriendsContext);
 
     return (
-        <section>
-            <h2>Your Friends</h2>
+        <section className='max-w-277.5 mx-auto w-9/10 xl:w-111/160 pt-10 pb-20'>
+            <h2 className='font-semibold text-2xl text-black-1F mb-4'>Your Friends</h2>
 
             <Suspense fallback={<div>Loading...</div>}>
                 <FriendsList friendsPromise={friendsPromise} />
