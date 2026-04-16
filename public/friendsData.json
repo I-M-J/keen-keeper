@@ -1,0 +1,180 @@
+[
+    {
+        "id": 1,
+        "name": "David Kim",
+        "picture": "David Kim",
+        "email": "david.kim@example.com",
+        "days_since_contact": 62,
+        "status": "almost_due",
+        "tags": [
+            "work",
+            "close friend"
+        ],
+        "bio": "Colleague from the office. Great collaborator on projects.",
+        "goal": 30,
+        "next_due_date": "2026-05-10"
+    },
+    {
+        "id": 2,
+        "name": "Emma Wilson",
+        "picture": "Emma Wilson",
+        "email": "emma.wilson@example.com",
+        "days_since_contact": 62,
+        "status": "overdue",
+        "tags": [
+            "family",
+            "hobby"
+        ],
+        "bio": "Cousin from the east side. Love catching up over coffee.",
+        "goal": 30,
+        "next_due_date": "2026-05-03"
+    },
+    {
+        "id": 3,
+        "name": "Lisa Nakamura",
+        "picture": "Lisa Nakamura",
+        "email": "lisa.nakamura@example.com",
+        "days_since_contact": 62,
+        "status": "overdue",
+        "tags": [
+            "travel",
+            "work"
+        ],
+        "bio": "Met at a tech conference. Sharp mind and great networker.",
+        "goal": 45,
+        "next_due_date": "2026-05-07"
+    },
+    {
+        "id": 4,
+        "name": "James Wright",
+        "picture": "James Wright",
+        "email": "james.wright@example.com",
+        "days_since_contact": 62,
+        "status": "overdue",
+        "tags": [
+            "close friend"
+        ],
+        "bio": "Travel buddy from the hiking club. Always planning the next trip.",
+        "goal": 60,
+        "next_due_date": "2026-05-01"
+    },
+    {
+        "id": 5,
+        "name": "Sarah Chen",
+        "picture": "Sarah Chen",
+        "email": "sarah.chen@example.com",
+        "days_since_contact": 14,
+        "status": "on_track",
+        "tags": [
+            "hobby",
+            "family"
+        ],
+        "bio": "Former roommate, now works in design. Very creative soul.",
+        "goal": 21,
+        "next_due_date": "2026-05-15"
+    },
+    {
+        "id": 6,
+        "name": "Michael Torres",
+        "picture": "Michael Torres",
+        "email": "michael.torres@example.com",
+        "days_since_contact": 10,
+        "status": "on_track",
+        "tags": [
+            "work",
+            "travel"
+        ],
+        "bio": "Brother-in-law. We bond over weekend football games.",
+        "goal": 14,
+        "next_due_date": "2026-05-20"
+    },
+    {
+        "id": 7,
+        "name": "Olivia Park",
+        "picture": "Olivia Park",
+        "email": "olivia.park@example.com",
+        "days_since_contact": 28,
+        "status": "almost_due",
+        "tags": [
+            "close friend",
+            "hobby"
+        ],
+        "bio": "Met at a pottery class. We share a love for ceramics.",
+        "goal": 30,
+        "next_due_date": "2026-05-12"
+    },
+    {
+        "id": 8,
+        "name": "Ryan Bennett",
+        "picture": "Ryan Bennett",
+        "email": "ryan.bennett@example.com",
+        "days_since_contact": 5,
+        "status": "on_track",
+        "tags": [
+            "family"
+        ],
+        "bio": "Manager from a previous job. Great mentor and advisor.",
+        "goal": 14,
+        "next_due_date": "2026-05-08"
+    },
+    {
+        "id": 9,
+        "name": "Priya Sharma",
+        "picture": "Priya Sharma",
+        "email": "priya.sharma@example.com",
+        "days_since_contact": 45,
+        "status": "overdue",
+        "tags": [
+            "work",
+            "hobby"
+        ],
+        "bio": "Met backpacking through Southeast Asia. Incredible storyteller.",
+        "goal": 30,
+        "next_due_date": "2026-05-05"
+    },
+    {
+        "id": 10,
+        "name": "Marcus Johnson",
+        "picture": "Marcus Johnson",
+        "email": "marcus.johnson@example.com",
+        "days_since_contact": 20,
+        "status": "almost_due",
+        "tags": [
+            "travel",
+            "close friend"
+        ],
+        "bio": "Gym partner turned colleague. Very driven and motivating.",
+        "goal": 21,
+        "next_due_date": "2026-05-18"
+    },
+    {
+        "id": 11,
+        "name": "Yuki Tanaka",
+        "picture": "Yuki Tanaka",
+        "email": "yuki.tanaka@example.com",
+        "days_since_contact": 7,
+        "status": "on_track",
+        "tags": [
+            "family",
+            "travel"
+        ],
+        "bio": "Exchange student who became like family. Lives abroad now.",
+        "goal": 14,
+        "next_due_date": "2026-05-22"
+    },
+    {
+        "id": 12,
+        "name": "Sofia Martinez",
+        "picture": "Sofia Martinez",
+        "email": "sofia.martinez@example.com",
+        "days_since_contact": 38,
+        "status": "overdue",
+        "tags": [
+            "hobby",
+            "work"
+        ],
+        "bio": "Photographer friend. We collaborate on travel blog content.",
+        "goal": 30,
+        "next_due_date": "2026-05-09"
+    }
+]
