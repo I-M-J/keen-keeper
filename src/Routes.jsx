@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Root from "./Root";
 import Home from "./pages/Home/Home";
 import Timeline from "./pages/Timeline/Timeline";
+import KeenDetails from "./pages/KeenDetails/KeenDetails";
 
 const router = createBrowserRouter([
     {
@@ -22,10 +23,10 @@ const router = createBrowserRouter([
             //     path: '/analytics',
             //     element: <Analytics />
             // },
-            // {
-            //     path: 'keen-details/:id',
-            //     element: <KeenDetails />
-            // }
+            {
+                path: 'keen-details/:id',
+                element: <KeenDetails />
+            }
         ]
     }
 ])

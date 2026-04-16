@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const FriendCard = ({ friend }) => {
     console.log(friend);
@@ -19,7 +20,7 @@ const FriendCard = ({ friend }) => {
     }
 
     return (
-        <div className='p-6 drop-shadow-sm bg-white rounded-lg space-y-3'>
+        <Link to={`keen-details/${friend.id}`} className='p-6 drop-shadow-sm bg-white rounded-lg space-y-3'>
             <div className='flex items-center justify-center'>
                 <img src={`/Keen Photos/${friend.picture}.png`} alt="" />
             </div>
@@ -29,9 +30,9 @@ const FriendCard = ({ friend }) => {
 
                 <p className='text-xs text-gray-64'>{friend.days_since_contact}d ago</p>
 
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-1'>
                     {
-                        friend.tags.map((tag, index) => <div className='bg-[#CBFADB] text-green-24 px-2 py-1.5 font-medium rounded-full' key={index}>{tag.toUpperCase()}</div>)
+                        friend.tags.map((tag, index) => <div className='bg-[#CBFADB] text-green-24 text-xs px-2 py-1.5 font-medium rounded-full' key={index}>{tag.toUpperCase()}</div>)
                     }
                 </div>
 
@@ -39,7 +40,7 @@ const FriendCard = ({ friend }) => {
             </div>
 
 
-        </div>
+        </Link>
     );
 };
 
