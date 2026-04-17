@@ -6,6 +6,7 @@ import { FiArchive } from 'react-icons/fi';
 import { LuPhoneCall } from 'react-icons/lu';
 import { MdOutlineTextsms } from 'react-icons/md';
 import { HiOutlineVideoCamera } from 'react-icons/hi';
+import { toast } from 'react-toastify';
 
 const KeenDetails = () => {
     const { friendsData, timeline, setTimeline } = useContext(FriendsContext);
@@ -47,14 +48,20 @@ const KeenDetails = () => {
 
     const handleCall = () => {
         setTimeline([...timeline, timelineGenerator("call")]);
+
+        toast.success(`Call with ${currentFriend.name} logged!`)
     }
 
     const handleText = () => {
         setTimeline([...timeline, timelineGenerator("text")]);
+
+        toast.success(`Text with ${currentFriend.name} logged!`)
     }
 
     const handleVideo = () => {
         setTimeline([...timeline, timelineGenerator("video")]);
+
+        toast.success(`Video call with ${currentFriend.name} logged!`)
     }
 
     return (

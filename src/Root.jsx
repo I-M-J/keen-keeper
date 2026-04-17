@@ -3,11 +3,18 @@ import Navbar from './components/Navbar/Navbar'
 import { Outlet, useLoaderData } from 'react-router'
 import Footer from './components/Footer/Footer'
 import FriendsContext from './contexts/FriendsContext'
+import { ToastContainer } from 'react-toastify'
 
-const friendsPromise = fetch("/friendsData.json").then((res) => res.json());
+const friendsDataFetch = async () => {
+    const res = await fetch("/friendsData.json");
+    const data = await res.json();
+    return data;
+}
 
 const Root = () => {
     const friendsData = useLoaderData();
+
+    const friendsPromise = friendsDataFetch();
 
     const [timeline, setTimeline] = useState([]);
 
@@ -20,6 +27,8 @@ const Root = () => {
             </FriendsContext.Provider>
 
             <Footer />
+
+            <ToastContainer />
         </>
     )
 }

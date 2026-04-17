@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Timeline from "./pages/Timeline/Timeline";
 import KeenDetails from "./pages/KeenDetails/KeenDetails";
 import Analytics from "./pages/Analytics/Analytics";
+import Error from "./pages/Error/Error";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: 'keen-details/:id',
                 element: <KeenDetails />
+            },
+            {
+                path: '*',
+                element: <Error />
             }
         ]
     }
