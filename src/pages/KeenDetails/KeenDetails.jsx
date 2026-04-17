@@ -95,7 +95,7 @@ const KeenDetails = () => {
 
                 </div>
 
-                <div className='col-span-2 md:col-span-3 grid grid-cols-3 gap-6'>
+                <div className='col-span-2 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-6'>
                     <div className='flex flex-col items-center text-center py-8 gap-2 col-span-1 drop-shadow-sm bg-white border border-white rounded-lg'>
                         <h2 className='font-semibold text-3xl text-green-24'>{currentFriend.days_since_contact}</h2>
                         <p className='text-lg text-gray-64'>Days Since Contact</p>
@@ -106,12 +106,12 @@ const KeenDetails = () => {
                         <p className='text-lg text-gray-64'>Goal (Days)</p>
                     </div>
 
-                    <div className='flex flex-col items-center text-center py-8 gap-2 col-span-1 drop-shadow-sm bg-white border border-white rounded-lg'>
+                    <div className='flex flex-col items-center text-center py-8 gap-2 col-span-2 md:col-span-1 drop-shadow-sm bg-white border border-white rounded-lg'>
                         <h2 className='font-semibold text-3xl text-green-24'>{due_date}</h2>
                         <p className='text-lg text-gray-64'>Next Due</p>
                     </div>
 
-                    <div className='col-span-3 space-y-4 bg-white border border-white drop-shadow-sm p-6 rounded-lg'>
+                    <div className='col-span-2 md:col-span-3 space-y-4 bg-white border border-white drop-shadow-sm p-6 rounded-lg'>
                         <div className='flex items-center justify-between'>
                             <h3 className='font-medium text-xl text-green-24'>Relationship Goal</h3>
                             <div className='font-medium text-sm text-black-1F py-2 px-4.25 bg-[#F8FAFC] border border-[#E9E9E9] rounded-sm'>Edit</div>
@@ -119,7 +119,7 @@ const KeenDetails = () => {
                         <p className='text-lg text-gray-64'>Connect every <span className='text-black-1F font-bold'>{currentFriend.goal} days</span></p>
                     </div>
 
-                    <div className='col-span-3 bg-white border border-white drop-shadow-sm p-6 rounded-lg grid grid-cols-3 gap-4'>
+                    <div className='col-span-2 md:col-span-3 bg-white border border-white drop-shadow-sm p-6 rounded-lg grid grid-cols-3 gap-4'>
                         <h3 className='font-medium text-xl text-green-24 col-span-3'>Quick Check-in</h3>
 
                         <div onClick={handleCall} className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>

@@ -13,7 +13,7 @@ const Timeline = () => {
         video: videoImage
     }
 
-    console.log(timeline);
+    // console.log(timeline);
 
     return (
         <section className='bg-[#F8FAFC] py-20'>
