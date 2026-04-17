@@ -3,6 +3,7 @@ import FriendsContext from '../../contexts/FriendsContext';
 import callImage from '../../assets/call.png';
 import textImage from '../../assets/text.png';
 import videoImage from '../../assets/video.png';
+import { TbMoodEmpty } from 'react-icons/tb';
 
 const Timeline = () => {
     const [filter, setFilter] = useState("");
@@ -35,6 +36,18 @@ const Timeline = () => {
                         <li onClick={() => setFilter("Call")} className='text-lg rounded-lg text-gray-64 border border-[#E9E9E9] p-2'><a>Filter Timeline by Call</a></li>
                         <li onClick={() => setFilter("Video")} className='text-lg rounded-lg text-gray-64 border border-[#E9E9E9] p-2'><a>Filter Timeline by Video</a></li>
                     </ul>
+                </div>
+
+                <div>
+                    {
+                        (finalTimeline.length === 0) && (
+                            <div className='flex flex-col items-center justify-center gap-4 py-20 text-center bg-white rounded-lg border border-white drop-shadow-sm'>
+                                <TbMoodEmpty className='text-9xl text-gray-64/50' />
+
+                                <p className='text-2xl text-gray-64 w-9/10'>{filter ? <span>No Timeline data available for the filter <strong>{filter}</strong>.</span> : "No Timeline data available, please add some interactions."}</p>
+                            </div>
+                        )
+                    }
                 </div>
 
                 <div className='space-y-6'>
