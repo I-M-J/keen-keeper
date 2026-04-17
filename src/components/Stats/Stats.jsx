@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import FriendsContext from '../../contexts/FriendsContext';
 
 const Stats = () => {
-    const { friendsData } = useContext(FriendsContext);
+    const { friendsData, timeline } = useContext(FriendsContext);
 
     const statsObjs = [
         {
@@ -19,7 +19,7 @@ const Stats = () => {
         },
         {
             title: "Interactions This Month",
-            data: 12
+            data: timeline.length
         }
     ]
 

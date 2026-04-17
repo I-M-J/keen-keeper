@@ -58,8 +58,8 @@ const KeenDetails = () => {
     }
 
     return (
-        <section className='max-w-277.5 mx-auto w-9/10 xl:w-111/160 py-20'>
-            <div className='grid grid-cols-2 md:grid-cols-5 gap-6'>
+        <section className='bg-[#F8FAFC] py-20'>
+            <div className='max-w-277.5 mx-auto w-9/10 xl:w-111/160 grid grid-cols-2 md:grid-cols-5 gap-6'>
                 <div className='col-span-2 space-y-4'>
                     <div className='p-6 drop-shadow-sm bg-white rounded-lg space-y-3 text-center'>
                         <div className='flex items-center justify-center'>
