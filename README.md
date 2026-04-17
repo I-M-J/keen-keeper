@@ -1,16 +1,35 @@
-# React + Vite
+# KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal relationship management web app that helps you stay intentionally connected with the people who matter most.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+KeenKeeper is a friendship tracking dashboard that lets you manage your social relationships with purpose. Set contact goals, track how long it's been since you last reached out, and log quick check-ins — all in one clean, minimal interface. Built as an assignment project for a web development course.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Technology | Purpose |
+|---|---|
+| React 19 | UI component library |
+| React Router v7 | Client-side routing & data loading |
+| Tailwind CSS v4 | Utility-first styling |
+| DaisyUI | Component styling utilities |
+| Recharts | Analytics chart rendering |
+| React Toastify | Toast notifications |
+| React Icons | Icon library |
+| Vite | Build tool & dev server |
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Dashboard & Friend Stats
+Get an at-a-glance overview of your relationships — total friends, how many are on track, how many need attention, and your total interactions this month, all shown as clean summary cards on the home page.
+
+### 2. Quick Check-in Logging
+From any friend's detail page, log a Call, Text, or Video interaction in one click. Each check-in is instantly recorded in your timeline and confirmed with a toast notification.
+
+### 3. Interaction Analytics
+The Analytics page visualizes your interaction history as a donut chart broken down by type (Call, Text, Video), giving you a clear picture of how you prefer to stay in touch.
+
+---
+
+> **Deployed on:** [Vercel](https://keen-keeper-swart.vercel.app/)
