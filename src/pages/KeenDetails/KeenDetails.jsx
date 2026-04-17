@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import FriendsContext from '../../contexts/FriendsContext';
 import { useParams } from 'react-router';
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
@@ -8,15 +8,15 @@ import { MdOutlineTextsms } from 'react-icons/md';
 import { HiOutlineVideoCamera } from 'react-icons/hi';
 
 const KeenDetails = () => {
-    const { friendsData } = useContext(FriendsContext);
+    const { friendsData, timeline, setTimeline } = useContext(FriendsContext);
 
     const { id } = useParams();
 
-    console.log(id);
+    // console.log(id);
 
     const currentFriend = friendsData.find((friend) => friend.id === Number(id));
 
-    console.log(currentFriend);
+    // console.log(currentFriend);
 
     const statusStylesObjs = {
         on_track: {
@@ -34,6 +34,28 @@ const KeenDetails = () => {
     }
 
     const due_date = new Date(currentFriend.next_due_date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+
+    const timelineGenerator = (type) => {
+        const timeline = {
+            type: type,
+            name: currentFriend.name,
+            date: new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
+        }
+
+        return timeline;
+    }
+
+    const handleCall = () => {
+        setTimeline([...timeline, timelineGenerator("call")]);
+    }
+
+    const handleText = () => {
+        setTimeline([...timeline, timelineGenerator("text")]);
+    }
+
+    const handleVideo = () => {
+        setTimeline([...timeline, timelineGenerator("video")]);
+    }
 
     return (
         <section className='max-w-277.5 mx-auto w-9/10 xl:w-111/160 py-20'>
@@ -100,15 +122,15 @@ const KeenDetails = () => {
                     <div className='col-span-3 bg-white border border-white drop-shadow-sm p-6 rounded-lg grid grid-cols-3 gap-4'>
                         <h3 className='font-medium text-xl text-green-24 col-span-3'>Quick Check-in</h3>
 
-                        <div className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
+                        <div onClick={handleCall} className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
                             <LuPhoneCall className='text-3xl text-black-1F' />
                             <p className='text-lg text-black-1F'>Call</p>
                         </div>
-                        <div className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
+                        <div onClick={handleText} className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
                             <MdOutlineTextsms className='text-3xl text-black-1F' />
                             <p className='text-lg text-black-1F'>Text</p>
                         </div>
-                        <div className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
+                        <div onClick={handleVideo} className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
                             <HiOutlineVideoCamera className='text-3xl text-black-1F' />
                             <p className='text-lg text-black-1F'>Video</p>
                         </div>

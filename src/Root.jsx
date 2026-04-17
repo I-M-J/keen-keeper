@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import { Outlet, useLoaderData } from 'react-router'
 import Footer from './components/Footer/Footer'
@@ -9,11 +9,13 @@ const friendsPromise = fetch("/friendsData.json").then((res) => res.json());
 const Root = () => {
     const friendsData = useLoaderData();
 
+    const [timeline, setTimeline] = useState([]);
+
     return (
         <>
             <Navbar />
 
-            <FriendsContext.Provider value={{ friendsData, friendsPromise }}>
+            <FriendsContext.Provider value={{ friendsData, friendsPromise, timeline, setTimeline }}>
                 <Outlet />
             </FriendsContext.Provider>
 

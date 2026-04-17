@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const FriendCard = ({ friend }) => {
-    console.log(friend);
+    // console.log(friend);
 
     const statusStylesObjs = {
         on_track: {
