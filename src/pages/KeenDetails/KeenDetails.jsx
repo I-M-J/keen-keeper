@@ -73,7 +73,7 @@ const KeenDetails = () => {
 
                 </div>
 
-                <div className='col-span-3 grid grid-cols-3 gap-6'>
+                <div className='col-span-2 md:col-span-3 grid grid-cols-3 gap-6'>
                     <div className='flex flex-col items-center text-center py-8 gap-2 col-span-1 drop-shadow-sm bg-white border border-white rounded-lg'>
                         <h2 className='font-semibold text-3xl text-green-24'>{currentFriend.days_since_contact}</h2>
                         <p className='text-lg text-gray-64'>Days Since Contact</p>
@@ -100,15 +100,15 @@ const KeenDetails = () => {
                     <div className='col-span-3 bg-white border border-white drop-shadow-sm p-6 rounded-lg grid grid-cols-3 gap-4'>
                         <h3 className='font-medium text-xl text-green-24 col-span-3'>Quick Check-in</h3>
 
-                        <div className='flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1'>
+                        <div className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
                             <LuPhoneCall className='text-3xl text-black-1F' />
                             <p className='text-lg text-black-1F'>Call</p>
                         </div>
-                        <div className='flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1'>
+                        <div className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
                             <MdOutlineTextsms className='text-3xl text-black-1F' />
                             <p className='text-lg text-black-1F'>Text</p>
                         </div>
-                        <div className='flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1'>
+                        <div className='btn h-fit px-0 flex flex-col items-center gap-2 py-4 bg-[#F8FAFC] border border-[#E9E9E9] rounded-lg col-span-1 hover:bg-[#E2E8F0] hover:drop-shadow-md hover:scale-105 transition-all duration-300'>
                             <HiOutlineVideoCamera className='text-3xl text-black-1F' />
                             <p className='text-lg text-black-1F'>Video</p>
                         </div>
