@@ -13,6 +13,8 @@ const Timeline = () => {
         video: videoImage
     }
 
+    console.log(timeline);
+
     return (
         <section className='bg-[#F8FAFC] py-20'>
             <div className='max-w-277.5 mx-auto w-9/10 xl:w-111/160 space-y-6'>
